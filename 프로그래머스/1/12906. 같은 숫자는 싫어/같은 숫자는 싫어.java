@@ -4,17 +4,18 @@ public class Solution {
     public int[] solution(int []arr) {
         int[] answer = {};
         
-		int previousNumber = -1;
-		Queue<Integer> queue = new LinkedList<>();
+		Deque<Integer> queue = new LinkedList<>();
 
 		for(int i=0; i< arr.length; i++) {
 
-			if(previousNumber == arr[i]) {
+			Integer prev = queue.peekLast();
+
+			if(prev != null && prev == arr[i]) {
 				continue;
 			}
 
-			previousNumber = arr[i];
 			queue.add(arr[i]);
+
 		}
 
 		int size = queue.size();
