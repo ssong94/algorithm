@@ -2,7 +2,7 @@ class Solution {
     public long solution(long n) {
         long answer = 0;
         
-        		String[] arr = String.valueOf(n).split("");
+        String[] arr = String.valueOf(n).split("");
 		StringBuilder sb = new StringBuilder();
 
 		sortToDesc(arr);
