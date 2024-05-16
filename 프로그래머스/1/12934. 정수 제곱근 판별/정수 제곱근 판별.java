@@ -1,5 +1,5 @@
 class Solution {
-    public long solution(long n) {
+	public long solution(long n) {
 		long answer = 0;
 
 		for (long i = 1; i <= n; i++) {
@@ -15,5 +15,5 @@ class Solution {
 		}
 
 		return answer;
-    }
+	}
 }
