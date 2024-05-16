@@ -1,7 +1,7 @@
 class Solution {
     public long solution(long n) {
-        long answer = 0;
-        
+		long answer = 0;
+
 		for (long i = 1; i <= n; i++) {
 			long square = i * i;
 
@@ -13,7 +13,7 @@ class Solution {
 				return -1;
 			}
 		}
-        
-        return answer;
+
+		return answer;
     }
 }
