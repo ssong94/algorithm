@@ -15,17 +15,6 @@ class Solution {
 					strings[i] = nextStr;
 					strings[j] = str;
 				}
-			}
-		}
-
-		for (int i = 0; i < strings.length - 1; i++) {
-			for (int j = i + 1; j < strings.length; j++) {
-
-				String str = strings[i];
-				char charAt = str.charAt(n);
-
-				String nextStr = strings[j];
-				char compareCharAt = nextStr.charAt(n);
 
 				boolean isSameAlphabet = charAt == compareCharAt;
 
@@ -38,7 +27,7 @@ class Solution {
 				}
 			}
 		}
-
+		
 		answer = strings;
 
 		return answer;
